@@ -22,7 +22,7 @@ html {
 body {
 
     background-color: #4d4855;
-background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
+    background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
     background-size: 100%;
 
     width: 100%;
@@ -32,15 +32,51 @@ background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
     grid-template-rows: 2fr 8fr;
     grid-template-areas: 
     "header header header"
-    "main main";
+    "main main main";
 
     header {
         grid-area: header;
         grid-column: 1/4;
         grid-row: 1;
 
-        background-color:  black;
-        opacity: 25%;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        justify-items: center;
+        align-items: center;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+
+        button {
+            padding: 10px 70px;
+            margin: 16px;
+            text-transform: uppercase;
+            border-radius: 8px;
+            font-size: 25px;
+            font-weight: 500;
+            color: #ffffff80;
+            text-shadow: none;
+            background: transparent;
+            cursor: pointer;
+            box-shadow: transparent;
+            border: 1px solid #ffffff80;
+            transition: 0.7s ease;
+            user-select: none;
+          }
+          
+          button:hover,
+          :focus {
+            color: antiquewhite;
+            background: linear-gradient(319deg, #ffcb43 0%, #ff6425 37%, #ff0016 100%);;
+            border: 1px solid cornflowerblue;
+            text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
+            box-shadow: 0 0 5px yellow, 0 0 20px darkorange, 0 0 50px #880808,
+              0 0 100px darkred;
+          }
+          
     }
 
     #content {
@@ -96,6 +132,13 @@ background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
             background-clip: text;
             -webkit-text-fill-color: transparent;
 
+            &:hover {
+                
+            text-shadow: 0 0 1px yellow, 0 0 5px darkorange, 0 0 15px #880808,
+            0 0 30px darkred;
+            
+            }
+
         }
         
         
@@ -113,10 +156,6 @@ background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
            color: antiquewhite;
         }
 
-        #headline {
-            font-size: xx-large;
-
-        }
 
     }
 
