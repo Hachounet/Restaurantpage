@@ -1,0 +1,28 @@
+{
+  "name": "restaurantpage",
+  "version": "0.0.1",
+  "description": "Restaurant Page for Odin Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hachounet/Restaurantpage.git"
+  },
+  "author": "Hachounet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hachounet/Restaurantpage/issues"
+  },
+  "homepage": "https://github.com/Hachounet/Restaurantpage#readme",
+  "devDependencies": {
+    "css-loader": "^6.10.0",
+    "sass": "^1.71.0",
+    "sass-loader": "^14.1.1",
+    "style-loader": "^3.3.4",
+    "webpack": "^5.90.3",
+    "webpack-cli": "^5.1.4"
+  }
+}
