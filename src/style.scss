@@ -15,8 +15,9 @@ html {
 }
 
 body {
-    color: $body-color-fallback;
-    background-image: url(./backgroundwall.jpg);
+
+    background-color: #4d4855;
+background-image: linear-gradient(147deg, #4d4855 0%, #000000 74%);
     background-size: 100%;
 
     width: 100%;
@@ -41,6 +42,31 @@ body {
         grid-area: main;
         grid-column: 2;
         grid-row: 2;
+
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+        align-items: center;
+
+        img {
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+        }
+
+        p {
+
+            background: #FFEFBA;  /* fallback for old browsers */
+            background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+            background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        #headline {
+            font-size: xx-large;
+
+        }
 
     }
 
