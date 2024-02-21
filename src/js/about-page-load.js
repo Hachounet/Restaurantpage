@@ -1,4 +1,7 @@
+import Coke from "./imgs/coke.png"
+
 export function displayAboutPage(){
+
 
     const contentDiv = document.getElementById("content");
     const divAboutAdText = document.createElement("div");
@@ -7,7 +10,7 @@ export function displayAboutPage(){
     const br = document.createElement("br")
 
     const divAdImg = document.createElement("div")
-    const imgAd = document.createElement("img");
+    const imgAd = new Image();
     const imgAdUrl = "../src/imgs/coke.png";
 
     const divContactImg = document.createElement("div");
@@ -27,7 +30,7 @@ export function displayAboutPage(){
     divAboutAdText.appendChild(pAdText);
 
     divAdImg.setAttribute("id", "contact-ad-img");
-    imgAd.src = imgAdUrl;
+    imgAd.src = Coke;
     divAdImg.appendChild(imgAd);
 
     divContactImg.setAttribute("id", "contact-ingr");
