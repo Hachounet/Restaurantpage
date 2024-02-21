@@ -1,4 +1,4 @@
-import Coke from "./imgs/coke.png"
+import Coke from "../imgs/coke.png"
 
 export function displayAboutPage(){
 
