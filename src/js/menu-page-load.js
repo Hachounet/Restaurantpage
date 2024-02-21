@@ -1,5 +1,5 @@
-import Coppapizza from "./imgs/coppapizza.png"
-import Pepperonnipizza from "./imgs/pepperonnipizza.png"
+import Coppapizza from "../imgs/coppapizza.png"
+import Pepperonnipizza from "../imgs/pepperonnipizza.png"
 
 export function displayMenuPage(){
 

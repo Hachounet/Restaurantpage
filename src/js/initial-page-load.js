@@ -1,5 +1,5 @@
-import Basil from "./imgs/basil.png"
-import Pizzaslice from "./imgs/pizzaslice.png"
+import Basil from "../imgs/basil.png"
+import Pizzaslice from "../imgs/pizzaslice.png"
 
 export function displayLandingPage(){
 
