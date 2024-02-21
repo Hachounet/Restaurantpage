@@ -1,3 +1,6 @@
+import Coppapizza from "./imgs/coppapizza.png"
+import Pepperonnipizza from "./imgs/pepperonnipizza.png"
+
 export function displayMenuPage(){
 
     const contentDiv = document.getElementById("content");
@@ -7,12 +10,11 @@ export function displayMenuPage(){
     const pPepp = document.createElement("p");
 
     const divImgRight = document.createElement("div")
-    const imgRight = document.createElement("img");
-    const imgRightUrl = "../src/imgs/pepperonnipizza.png";
+    const imgRight = new Image();
 
     const divImgLeft = document.createElement("div");
-    const imgLeft = document.createElement("img");
-    const imgLeftUrl = "../src/imgs/coppapizza.png"
+    const imgLeft = new Image();
+
 
     const divCoppa = document.createElement("div");
     const pCoppa = document.createElement("p");
@@ -26,11 +28,11 @@ export function displayMenuPage(){
     divPepp.appendChild(pPepp);
 
     divImgRight.setAttribute("id", "imgright");
-    imgRight.src = imgRightUrl;
+    imgRight.src = Pepperonnipizza;
     divImgRight.appendChild(imgRight);
 
     divImgLeft.setAttribute("id", "imgleft");
-    imgLeft.src = imgLeftUrl;
+    imgLeft.src = Coppapizza;
     divImgLeft.appendChild(imgLeft);
 
     divCoppa.classList.add("text-content2");

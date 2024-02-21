@@ -6,7 +6,6 @@ import { displayMenuPage } from "./js/menu-page-load";
 import { displayAboutPage} from "./js/about-page-load"
 
 import Basil from "./imgs/basil.png"
-import Coke from "./imgs/coke.png"
 import coppapizza from "./imgs/coppapizza.png"
 import logo from "./imgs/logo.png"
 import mozza2 from "./imgs/mozza2.png"

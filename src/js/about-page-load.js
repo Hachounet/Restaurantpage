@@ -1,4 +1,5 @@
 import Coke from "../imgs/coke.png"
+import mozza2 from "../imgs/mozza2.png"
 
 export function displayAboutPage(){
 
@@ -11,11 +12,9 @@ export function displayAboutPage(){
 
     const divAdImg = document.createElement("div")
     const imgAd = new Image();
-    const imgAdUrl = "../src/imgs/coke.png";
 
     const divContactImg = document.createElement("div");
-    const imgContact = document.createElement("img");
-    const imgContactUrl = "../src/imgs/mozza2.png"
+    const imgContact = new Image();
 
     const divContact = document.createElement("div");
     const pContact = document.createElement("p");
@@ -34,7 +33,7 @@ export function displayAboutPage(){
     divAdImg.appendChild(imgAd);
 
     divContactImg.setAttribute("id", "contact-ingr");
-    imgContact.src = imgContactUrl;
+    imgContact.src = mozza2;
     divContactImg.appendChild(imgContact);
 
     divContact.setAttribute("id", "contact")

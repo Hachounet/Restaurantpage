@@ -1,4 +1,5 @@
-
+import Basil from "./imgs/basil.png"
+import Pizzaslice from "./imgs/pizzaslice.png"
 
 export function displayLandingPage(){
 
@@ -8,12 +9,12 @@ export function displayLandingPage(){
     const pPepp = document.createElement("p");
 
     const divPizza = document.createElement("div")
-    const imgPizza = document.createElement("img");
-    const imgPizzaUrl = "../src/imgs/pizzaslice.png";
+    const imgPizza = new Image();
+   
 
     const divBasil = document.createElement("div");
-    const imgBasil = document.createElement("img");
-    const imgBasilUrl = "../src/imgs/basil.png"
+    const imgBasil = new Image();
+  
 
     const divIngr = document.createElement("div");
     const pIngr = document.createElement("p");
@@ -26,10 +27,10 @@ export function displayLandingPage(){
     divPepp.appendChild(pPepp)
 
     divPizza.setAttribute("id", "imgright")
-    imgPizza.src = imgPizzaUrl;
+    imgPizza.src = Pizzaslice;
     divPizza.appendChild(imgPizza)
 
-    imgBasil.src = imgBasilUrl;
+    imgBasil.src = Basil;
     divBasil.setAttribute("id", "imgleft")
     divBasil.appendChild(imgBasil);
 
