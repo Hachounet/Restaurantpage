@@ -47,8 +47,13 @@ body {
         img {
             width: 150px;
             height: 150px;
+            grid-column: 1;
+            grid-row: 1;
         }
 
+        nav {
+            grid-column: 2;
+        }
 
         button {
             padding: 10px 70px;

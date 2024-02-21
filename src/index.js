@@ -5,13 +5,15 @@ import { displayLandingPage } from "./js/initial-page-load"
 import { displayMenuPage } from "./js/menu-page-load";
 import { displayAboutPage} from "./js/about-page-load"
 
-import Basil from "./imgs/basil.png"
-import coppapizza from "./imgs/coppapizza.png"
 import logo from "./imgs/logo.png"
-import mozza2 from "./imgs/mozza2.png"
-import pepperonnipizza from "./imgs/pepperonnipizza.png"
-import pizzaslice from "./imgs/pizzaslice.png"
 
+function displayLogo() {
+    const header = document.querySelector("header")
+    const logoImg = new Image();
+    logoImg.src = logo;
+    header.appendChild(logoImg);
+
+}
 
 
 function dynamicContent() {
@@ -38,5 +40,6 @@ function dynamicContent() {
 
 };
 
+displayLogo();
 displayLandingPage();
 document.addEventListener("DOMContentLoaded", dynamicContent);
